@@ -28,6 +28,7 @@ class LoginActivity : AppCompatActivity(){
                     //if successful
                     Log.d("Login","Successfully logged in with uid: ${it.result.user.uid}")
                     val intent = Intent(this, LatestMessagesActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
                 }.addOnFailureListener{
                     Log.d("Login","Failed to log in: ${it.message}")
