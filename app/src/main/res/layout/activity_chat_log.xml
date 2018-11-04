@@ -6,7 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ChatLogActivity"
-        android:background="@android:color/white">
+        android:background="@android:color/white"
+        android:theme="@style/Theme.AppTheme.TranslucentStatusBar">
 
     <EditText
             android:layout_width="0dp"
